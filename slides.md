@@ -5,7 +5,7 @@ addons:
 title: STEP Lesson 1
 author: 拓课堂
 date: 2025
-logo: /logo/company-logo.png
+logo: ./logo/company-logo.png
 info: |
   STEP Lesson 1: Calculus: Differentiation
 ---
