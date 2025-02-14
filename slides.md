@@ -8,6 +8,7 @@ date: 2025
 logo: ./logo/company-logo.png
 info: |
   STEP Lesson 1: Calculus: Differentiation
+favicon: ./logo/favicon.png
 ---
 
 # 拓课堂 STEP 课程
@@ -860,6 +861,10 @@ There are many ways to prove it. You can use first principles, or you can use th
 
 </Note>
 
+<!--
+this is the note we have for this slide. 
+-->
+
 ---
 
 # Product Rule: Proof Using Implicit Differentiation and Log
@@ -954,10 +959,9 @@ $$
 
 Now,
 $$
-\frac{d}{dx}\!\Bigl(\frac{x^3}{1+x^2}\Bigr)
-= \frac{(1+x^2)\cdot 3x^2 - x^3 \cdot 2x}{(1+x^2)^2}
-= \frac{3x^2 + 3x^4 - 2x^4}{(1+x^2)^2}
-= \frac{3x^2 + x^4}{(1+x^2)^2}.
+\begin{align*}
+\frac{d}{d x}\left(\frac{x^3}{1+x^2}\right)=\frac{\left(1+x^2\right) \cdot 3 x^2-x^3 \cdot 2 x}{\left(1+x^2\right)^2}=\frac{3 x^2+3 x^4-2 x^4}{\left(1+x^2\right)^2}=\frac{3 x^2+x^4}{\left(1+x^2\right)^2}
+\end{align*}
 $$
 
 Hence,
@@ -1008,6 +1012,3 @@ f'(x) \ \ge\ 0\ \ \text{for all }x.
 $$
 
 </Answer>
-
-<DrawingLayer />
-
