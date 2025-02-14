@@ -1,0 +1,242 @@
+---
+theme: default
+title: A-Level Calculus
+logo: /logo/company-logo.png
+---
+
+# A-Level Calculus
+## Differentiation and Integration
+
+---
+section: Differentiation
+---
+
+# The Derivative
+
+<Definition title="The Derivative" subject="Calculus" topic="Differentiation">
+
+The derivative of a function $f(x)$ at a point $x$ is defined as:
+
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+$$
+
+This represents the instantaneous rate of change of $f(x)$ with respect to $x$.
+
+</Definition>
+
+---
+
+# Geometric Interpretation
+
+<Note type="important" importance="high">
+
+The derivative $f'(x)$ gives us the slope of the tangent line at any point $x$ on the curve $f(x)$.
+
+</Note>
+
+---
+section: Chain Rule
+---
+
+# The Chain Rule
+
+<Theorem title="Chain Rule" author="Gottfried Leibniz" year="1676">
+
+If $y = f(u)$ and $u = g(x)$, then:
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+$$
+
+</Theorem>
+
+---
+
+# Chain Rule Alternative Form
+
+<Note type="tip" importance="medium">
+
+The chain rule can also be written in alternative notation:
+
+$$(f \circ g)'(x) = f'(g(x)) \cdot g'(x)$$
+
+This form is particularly useful when working with composite functions.
+
+</Note>
+
+---
+
+# Chain Rule Example
+
+<Example title="Chain Rule Application" topic="Differentiation" difficulty="Medium">
+
+Find $\frac{d}{dx}[\sin(x^2)]$
+
+Let $u = x^2$, then $y = \sin(u)$
+
+</Example>
+
+---
+
+# Chain Rule Solution
+
+<Answer>
+
+Using the Chain Rule:
+
+1) Let $y = \sin(u)$ where $u = x^2$
+2) Then:
+   $$
+   \begin{aligned}
+   \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} \\
+   &= \cos(u) \cdot \frac{d}{dx}(x^2) \\
+   &= \cos(x^2) \cdot 2x \\
+   &= 2x\cos(x^2)
+   \end{aligned}
+   $$
+
+</Answer>
+
+---
+section: Integration
+---
+
+# Integration
+
+<Definition title="Definite Integral" subject="Calculus" topic="Integration">
+
+The definite integral of a function $f(x)$ from $a$ to $b$ is defined as:
+
+$$
+\int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i)\Delta x
+$$
+
+This represents the area under the curve of $f(x)$ from $a$ to $b$.
+
+</Definition>
+
+---
+
+# Fundamental Theorem
+
+<Theorem title="Fundamental Theorem of Calculus" author="Newton-Leibniz">
+
+If $F(x)$ is an antiderivative of $f(x)$, then:
+
+$$
+\int_a^b f(x)\,dx = F(b) - F(a)
+$$
+
+</Theorem>
+
+---
+
+# Proof of FTC
+
+<Proof method="Direct" difficulty="Medium">
+
+Let $F(x)$ be an antiderivative of $f(x)$. Then:
+
+1) By definition, $F'(x) = f(x)$
+2) Consider the difference $F(b) - F(a)$
+3) By the Mean Value Theorem:
+   $$F(b) - F(a) = \int_a^b F'(x)\,dx = \int_a^b f(x)\,dx$$
+
+</Proof>
+
+---
+section: Applications
+---
+
+# Area Between Curves
+
+<Question title="Area Problem" points={10} difficulty="Hard">
+
+Find the area between the curves $y = x^2$ and $y = x$ from $x = 0$ to $x = 1$.
+
+Hint: Draw a diagram to visualize the region.
+
+</Question>
+
+---
+
+# Solution
+
+<Answer>
+
+Let's solve this step by step:
+
+1) The area is given by: $\int_0^1 (x - x^2)\,dx$
+
+2) Integrate:
+   $$
+   \begin{aligned}
+   \int_0^1 (x - x^2)\,dx &= \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1 \\
+   &= \left(\frac{1}{2} - \frac{1}{3}\right) - (0 - 0) \\
+   &= \frac{1}{6}
+   \end{aligned}
+   $$
+
+Therefore, the area is $\frac{1}{6}$ square units.
+
+</Answer>
+
+---
+
+# Important Tips
+
+<Note type="tip" importance="medium">
+
+When finding areas between curves:
+
+1. Always identify which curve is on top
+2. Subtract the lower curve from the upper curve
+3. Set up the integral with correct bounds
+
+</Note>
+
+---
+section: Practice
+layout: center
+class: text-center
+---
+
+# Practice Problems
+
+<Example title="Integration by Parts" topic="Integration" difficulty="Hard">
+
+Evaluate the integral:
+$$\int x\ln(x)\,dx$$
+
+</Example>
+
+---
+
+# Solution
+
+<Answer>
+
+Using integration by parts formula $\int u\,dv = uv - \int v\,du$:
+
+1) Let $u = \ln(x)$ and $dv = x\,dx$
+2) Then $du = \frac{1}{x}\,dx$ and $v = \frac{x^2}{2}$
+3) Therefore:
+   $$
+   \begin{aligned}
+   \int x\ln(x)\,dx &= \frac{x^2}{2}\ln(x) - \int \frac{x^2}{2} \cdot \frac{1}{x}\,dx \\
+   &= \frac{x^2}{2}\ln(x) - \frac{1}{2}\int x\,dx \\
+   &= \frac{x^2}{2}\ln(x) - \frac{x^2}{4} + C
+   \end{aligned}
+   $$
+
+</Answer>
+
+---
+layout: center
+class: text-center
+---
+
+# Thank You!
+
+The beauty of calculus lies in its ability to describe change and accumulation.
