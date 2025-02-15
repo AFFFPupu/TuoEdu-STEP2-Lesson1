@@ -3,12 +3,14 @@ theme: default
 addons: 
  - tldraw
 title: STEP Lesson 1
+titleTemplate: '%s - 拓课堂'
 author: 拓课堂
 date: 2025
 logo: ./logo/company-logo.png
 info: |
   STEP Lesson 1: Calculus: Differentiation
 favicon: ./logo/favicon.png
+colorSchema: light
 ---
 
 # 拓课堂 STEP 课程
