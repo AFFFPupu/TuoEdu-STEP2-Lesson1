@@ -118,7 +118,7 @@ defineProps<{
 :deep(.definition-body) {
   /* Inline math */
   .katex {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   /* Display math */
@@ -133,6 +133,7 @@ defineProps<{
   ol {
     margin: 0.5em 0;
     padding-left: 1.5em;
+    font-size: 0.9375rem;
   }
 
   li {
@@ -141,6 +142,7 @@ defineProps<{
 
   p {
     margin: 0.5em 0;
+    font-size: 0.9375rem;
   }
 }
 </style>

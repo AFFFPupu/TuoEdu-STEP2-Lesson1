@@ -32,14 +32,14 @@ section: 'STEP 介绍'
 
 <div v-click>
 
-- <span class="text-red-500 font-bold">**STEP（第六学期考试）**</span> 是一种数学资格考试，旨在测试数学知识和技能，通常用于大学入学。
+- <span v-mark.red="1">**STEP（第六学期考试）**</span> 是一种数学资格考试，旨在测试数学知识和技能，通常用于大学入学。
 
 </div>
 
 <div v-click>
 
-- <span class="text-gray-500">**STEP 数学 1** 自 2021 年 6 月起不再提供。</span>
-- <span class="text-green-500 font-bold">**STEP 数学 2 和 3** 仍然可用，其性质和风格在 2025 年保持不变。</span>
+- <span v-mark.underline.gray="2">**STEP 数学 1** 自 2021 年 6 月起不再提供。</span>
+- **STEP 数学 2 和 3** 仍然可用，其性质和风格在 2025 年保持不变。
 
 </div>
 
@@ -131,7 +131,7 @@ section: Limits
 
 <Definition title="Limit" subject="Calculus" topic="Limits">
 
-The limit of a function $f(x)$ as $x$ approaches $c$ is the value that $f(x)$ gets arbitrarily close to as $x$ gets arbitrarily close to $c$.
+The limit of a function $f(x)$ as $x$ approaches $c$ is the value that $f(x)$ gets <span v-mark.red="2">arbitrarily close</span> to as $x$ gets arbitrarily close to $c$.
 
 </Definition>
 
